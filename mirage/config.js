@@ -1,7 +1,7 @@
-export default function() {
+export default function () {
   this.namespace = '/api';
 
-  this.get('/rentals', function() {
+  this.get('/rentals', function () {
     return {
       data: [{
         type: 'rentals',
@@ -39,7 +39,7 @@ export default function() {
           image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg',
           description: "Convenience is at your doorstep with this charming downtown rental. Great restaurants and active night life are within a few feet."
         }
-      }];
+      }]
     };
   });
 }
